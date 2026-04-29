@@ -179,7 +179,12 @@ Deletes an inventory item by its unique identifier.
 * 404 Not Found — Item does not exist
 * 500 Internal Server Error — Failure during processing
 ***
-### Command to run app
+## Command to run app
+## Start virtual environment
+```bash
+source .myVenv/bin/activate
+```
+## Start the server
 ```bash
 gunicorn -b 127.0.0.1:5000 main:app
 ```
